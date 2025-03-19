@@ -7,7 +7,7 @@ const Home: React.FC = () => {
   
   return (
     <div className="max-w-4xl mx-auto mt-10 p-6 bg-white rounded-lg shadow-md">
-      <h1 className="text-3xl font-bold text-center mb-6">Welcome to Todo List App</h1>
+      <h1 className="text-3xl font-bold text-center mb-6">Welcome to The Ultimate Todo List App!</h1>
       
       <div className="text-center mb-8">
         <p className="text-lg mb-4">

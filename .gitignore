@@ -44,3 +44,6 @@ yarn-error.log*
 *.swp
 *.swo
 .DS_Store
+
+# Local Netlify folder
+.netlify

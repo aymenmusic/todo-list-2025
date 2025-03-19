@@ -1,8 +1,11 @@
 import axios from 'axios';
 
+// Get the API URL from environment variables or use the local development URL as fallback
+const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:5001';
+
 // Create an axios instance with default config
 const api = axios.create({
-  baseURL: 'http://localhost:5001/api', // Updated Flask backend URL to port 5001
+  baseURL: `${API_URL}/api`, // Use environment variable with /api path
   headers: {
     'Content-Type': 'application/json',
   },
