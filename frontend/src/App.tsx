@@ -35,7 +35,8 @@ function AppContent() {
           <div className="mt-2">
             {user ? (
               <div className="flex justify-between">
-                <span>Welcome, {user.username}!</span>
+                {/* Only adds a heart IFF the username is 'christyy who is my S/O or aymen2 (for testing)' */}
+                <span>Welcome, {user.username}{user.username === 'christyy' || user.username === 'aymen2' ? ' ♥️' : ''}!</span> 
                 <button 
                   onClick={logout}
                   className="text-blue-500 hover:text-blue-700"
@@ -69,6 +70,11 @@ function AppContent() {
           </Routes>
         </div>
       </main>
+      <footer className="bg-white shadow-inner py-4">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-gray-600">
+          Made by Aymen 🖤
+        </div>
+      </footer>
     </div>
   );
 }
